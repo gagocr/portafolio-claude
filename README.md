@@ -30,8 +30,8 @@ herramientas/              construir_sitio.py y las fuentes de estilo.css y siti
 
 ## De dónde sale el contenido
 
-Del **currículo de referencia** del proyecto de búsqueda de empleo (repositorio privado
-`busqueda-empleo`, Registro Maestro v3.20): es el mismo texto que recibe un empleador, sin
+Del **currículo de referencia** del proyecto privado de búsqueda de empleo (Registro
+Maestro v3.20): es el mismo texto que recibe un empleador, sin
 redactar nada nuevo. Las tres cifras de la portada son frases del perfil, sin redondear.
 
 ## Lo que este sitio no lleva, a propósito
@@ -49,12 +49,13 @@ del centro de búsqueda y ningún nombre de contacto interno.
 
 ## Publicarlo
 
-- **Repositorio privado**: GitHub Pages en un repositorio privado exige un plan de pago
-  (GitHub Pro o superior), y aun así el sitio publicado es público. Sin Pages, solo lo ven
-  las personas con acceso al repositorio.
-- **Para que lo vean reclutadores**: Settings → Pages → Deploy from a branch → `main` / raíz.
-- La página lleva `noindex`: no aparece en buscadores. Para que aparezca, se quita la
-  línea `<meta name="robots" …>` de `index.html`.
+- **El repositorio es público**: cualquiera puede leer estos archivos. Por eso no lleva nada
+  que no esté ya en el currículo que recibe un empleador, y menos que eso (ver arriba).
+- **Para tener la dirección web**: Settings → Pages → Build and deployment → Deploy from a
+  branch → `main` y `/ (root)` → Save. A los pocos minutos queda en
+  `https://gagocr.github.io/portafolio-claude/`. En un repositorio público, Pages es gratis.
+- La página lleva `noindex`: quien tenga el enlace la ve, pero no aparece en buscadores. Para
+  que aparezca, se quita la línea `<meta name="robots" …>` de `index.html`.
 
 ## Regenerarlo
 
