@@ -4,292 +4,471 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Rubén Gago Chavez — Currículo</title>
-<meta name="description" content="Rubén Gago Chavez: organización documental y de la información, SQL, Excel e indicadores, gestión comercial y servicios técnicos.">
+<meta name="description" content="Rubén Gago Chavez — Organización Documental y de la Información · SQL, Excel e Indicadores · Gestión Comercial · Servicios Técnicos">
 <meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0d4a8d">
 <link rel="icon" href="assets/img/icono.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap">
 <link rel="stylesheet" href="assets/css/estilo.css">
+<script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('tema');if(t)document.documentElement.dataset.theme=t}catch(_){}</script>
 </head>
 <body>
 <a class="saltar" href="#perfil">Ir al contenido</a>
+<div class="progreso" aria-hidden="true"><span></span></div>
 <header class="barra">
   <div class="contenedor barra-in">
-    <a class="marca" href="#inicio">RG</a>
-    <nav aria-label="Secciones">
-      <ul>
-        <li><a href="#perfil">Perfil</a></li>
-        <li><a href="#experiencia">Experiencia</a></li>
-        <li><a href="#competencias">Competencias</a></li>
-        <li><a href="#formacion">Formación</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
+    <a class="marca" href="#inicio" aria-label="Inicio"><span>RG</span></a>
+    <nav aria-label="Secciones"><ul><li><a href="#perfil" data-seccion="perfil">Perfil</a></li><li><a href="#trayectoria" data-seccion="trayectoria">Trayectoria</a></li><li><a href="#experiencia" data-seccion="experiencia">Experiencia</a></li><li><a href="#competencias" data-seccion="competencias">Competencias</a></li><li><a href="#formacion" data-seccion="formacion">Formación</a></li><li><a href="#obra" data-seccion="obra">Publicaciones y proyectos</a></li><li><a href="#contacto" data-seccion="contacto">Contacto</a></li></ul></nav>
+    <button class="tema" type="button" aria-label="Cambiar entre tema claro y oscuro" title="Tema claro u oscuro">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path class="sol" d="M12 4V2m0 20v-2m8-8h2M2 12h2m13.66-5.66 1.41-1.41M4.93 19.07l1.41-1.41m0-11.32L4.93 4.93m14.14 14.14-1.41-1.41M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Z"/><path class="luna" d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>
+    </button>
   </div>
 </header>
 
 <main id="inicio">
   <section class="portada">
+    <div class="trama" aria-hidden="true"></div>
     <div class="contenedor portada-in">
-      <p class="sobre">Currículo</p>
-      <h1>Rubén Gago Chavez</h1>
-      <ul class="areas"><li>Organización Documental y de la Información</li><li>SQL, Excel e Indicadores</li><li>Gestión Comercial</li><li>Servicios Técnicos</li></ul>
-      <p class="entrada">Mi trayectoria laboral comenzó en 2011 y abarca la organización de la información, las consultas SQL y la reportería de indicadores, la gestión comercial, los servicios técnicos y, desde agosto de 2026, la aplicación de encuestas telefónicas de opinión pública en el CIEP de la UCR.</p>
-      <div class="acciones">
-        <a class="boton primario" href="mailto:gagocr00@gmail.com">Escribirme</a>
-        <a class="boton" href="https://linkedin.com/in/gagocr" rel="noopener" target="_blank">LinkedIn</a>
-        <a class="boton" href="https://researchgate.net/profile/Ruben-Gago-Chavez-2" rel="noopener" target="_blank">ResearchGate</a>
+      <div class="portada-txt">
+        <p class="sobre"><span class="pulso" aria-hidden="true"></span>Currículo · Costa Rica</p>
+        <h1>Rubén Gago Chavez</h1>
+        <ul class="areas"><li>Organización Documental y de la Información</li><li>SQL, Excel e Indicadores</li><li>Gestión Comercial</li><li>Servicios Técnicos</li></ul>
+        <p class="entrada">Mi trayectoria laboral comenzó en 2011 y abarca la organización de la información, las consultas SQL y la reportería de indicadores, la gestión comercial, los servicios técnicos y, desde agosto de 2026, la aplicación de encuestas telefónicas de opinión pública en el CIEP de la UCR.</p>
+        <div class="acciones">
+          <a class="boton primario" href="mailto:gagocr00@gmail.com">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3z"/><path d="m3 7 9 6 9-6"/></svg>Escribirme</a>
+          <a class="boton" href="https://linkedin.com/in/gagocr" rel="noopener" target="_blank">LinkedIn</a>
+          <a class="boton" href="https://researchgate.net/profile/Ruben-Gago-Chavez-2" rel="noopener" target="_blank">ResearchGate</a>
+          <button class="boton fantasma solo-sitio" type="button" data-imprimir>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 9V3h10v6"/><path d="M7 17H4v-7h16v7h-3"/><path d="M7 14h10v7H7z"/></svg>Imprimir</button>
+        </div>
       </div>
-      <ul class="cifras"><li><span class="cifra">Desde 2011</span><span class="cifra-txt">trayectoria laboral</span></li><li><span class="cifra">Más de 6.000</span><span class="cifra-txt">ítems de colecciones patrimoniales descritos en DSpace</span></li><li><span class="cifra">Más de 500</span><span class="cifra-txt">artículos marcados en XML-JATS validados para su indexación en SciELO</span></li></ul>
+
+      <aside class="ficha" aria-label="Ficha de registro">
+        <div class="ficha-cab">
+          <span class="monograma" aria-hidden="true">RG</span>
+          <div>
+            <p class="ficha-rot">Ficha de registro</p>
+            <p class="ficha-nom">Rubén Gago Chavez</p>
+          </div>
+        </div>
+        <dl class="ficha-campos">
+          <div><dt>Materias</dt><dd>4 áreas · 37 competencias</dd></div>
+          <div><dt>Trayectoria</dt><dd>Desde 2011 · 11 puestos</dd></div>
+          <div><dt>Idiomas</dt><dd>Español (nativo). Inglés: A2 (EF SET, setiembre de 2026).</dd></div>
+          <div><dt>Correo</dt><dd><span class="copiable">gagocr00@gmail.com</span>
+            <button class="copiar" type="button" data-copiar="gagocr00@gmail.com">Copiar</button></dd></div>
+        </dl>
+        <p class="ficha-pie">Registro Maestro v3.20</p>
+      </aside>
     </div>
+  </section>
+
+  <section class="banda" aria-label="Cifras">
+    <div class="contenedor"><ul class="cifras">
+          <li class="cifra revela"><span class="cifra-pre">Desde</span><span class="cifra-num">2011</span><span class="cifra-txt">trayectoria laboral</span></li>
+          <li class="cifra revela"><span class="cifra-pre">Más de</span><span class="cifra-num" data-cuenta="6000">6.000</span><span class="cifra-txt">ítems de colecciones patrimoniales descritos en DSpace</span></li>
+          <li class="cifra revela"><span class="cifra-pre">Más de</span><span class="cifra-num" data-cuenta="500">500</span><span class="cifra-txt">artículos marcados en XML-JATS validados para su indexación en SciELO</span></li>
+    </ul></div>
   </section>
 
   <section id="perfil" class="seccion">
-    <div class="contenedor estrecho">
-      <h2><span class="num">01</span>Perfil Profesional</h2>
-      <div class="prosa"><p>Describí más de 6.000 ítems de colecciones patrimoniales en DSpace y validé más de 500 artículos académicos y científicos marcados en XML-JATS para su indexación en SciELO; además, capacité en marcaje XML-JATS a editores y equipos de trabajo de otras universidades públicas.</p><p>Escribí, modifiqué y ejecuté consultas SQL en MySQL y MariaDB; elaboré reportes quincenales de indicadores comerciales y, en una función rotativa, calculé y reporté mensualmente los indicadores de ticket promedio y tasa de abandono; evalué la capacidad de pago de solicitantes de crédito y de inquilinos.</p><p>Curso estudios en Bibliotecología con énfasis en Ciencias de la Información y en Filosofía con énfasis en Docencia en la Universidad de Costa Rica, tengo estudios pausados en Ingeniería Informática en la UNED y soy Técnico en Telecomunicaciones y Telemática por el INA.</p></div>
+    <div class="contenedor dos-col">
+      <header class="sec-cab revela">
+        <p class="sec-num">01</p>
+        <h2>Perfil Profesional</h2>
+      </header>
+      <div class="prosa"><p class="revela">Describí más de 6.000 ítems de colecciones patrimoniales en DSpace y validé más de 500 artículos académicos y científicos marcados en XML-JATS para su indexación en SciELO; además, capacité en marcaje XML-JATS a editores y equipos de trabajo de otras universidades públicas.</p><p class="revela">Escribí, modifiqué y ejecuté consultas SQL en MySQL y MariaDB; elaboré reportes quincenales de indicadores comerciales y, en una función rotativa, calculé y reporté mensualmente los indicadores de ticket promedio y tasa de abandono; evalué la capacidad de pago de solicitantes de crédito y de inquilinos.</p><p class="revela">Curso estudios en Bibliotecología con énfasis en Ciencias de la Información y en Filosofía con énfasis en Docencia en la Universidad de Costa Rica, tengo estudios pausados en Ingeniería Informática en la UNED y soy Técnico en Telecomunicaciones y Telemática por el INA.</p></div>
     </div>
   </section>
 
-  <section id="experiencia" class="seccion alterna">
+  <section id="trayectoria" class="seccion alterna">
     <div class="contenedor">
-      <h2><span class="num">02</span>Experiencia Profesional</h2>
+      <header class="sec-cab revela">
+        <p class="sec-num">02</p>
+        <h2>Trayectoria en el tiempo</h2>
+        <p class="sec-desc">Cada puesto, a escala, de 2011 a hoy. Los tramos rayados son periodos dados solo en años.
+          Toque una fila para ver el puesto.</p>
+      </header>
+      <div class="cronologia-marco revela">
+        <div class="cronologia" style="--anio:6.3158%">
+          <div class="regla"><span class="fila-nom"></span><span class="regla-pista"><span class="anio" style="left:0.000%">2011</span><span class="anio par" style="left:6.316%">2012</span><span class="anio" style="left:12.632%">2013</span><span class="anio par" style="left:18.947%">2014</span><span class="anio" style="left:25.263%">2015</span><span class="anio par" style="left:31.579%">2016</span><span class="anio" style="left:37.895%">2017</span><span class="anio par" style="left:44.211%">2018</span><span class="anio" style="left:50.526%">2019</span><span class="anio par" style="left:56.842%">2020</span><span class="anio" style="left:63.158%">2021</span><span class="anio par" style="left:69.474%">2022</span><span class="anio" style="left:75.789%">2023</span><span class="anio par" style="left:82.105%">2024</span><span class="anio" style="left:88.421%">2025</span><span class="anio par" style="left:94.737%">2026</span></span><span class="fila-per"></span></div>
+          
+        <a class="fila-t" href="#p-0" data-abre="p-0" title="UCR — Centro de Investigación y Estudios Políticos (CIEP) · ago 2026 – actualidad">
+          <span class="fila-nom">UCR — Centro de Investigación y Estudios Políticos (CIEP)</span>
+          <span class="fila-pista"><span class="barra-t actual" style="left:98.421%;width:1.579%"></span></span>
+          <span class="fila-per">ago 2026 – actualidad</span>
+        </a>
+        <a class="fila-t" href="#p-1" data-abre="p-1" title="TORAM Portafolio S.R.L. · jul 2025 – jul 2026">
+          <span class="fila-nom">TORAM Portafolio S.R.L.</span>
+          <span class="fila-pista"><span class="barra-t" style="left:91.579%;width:6.842%"></span></span>
+          <span class="fila-per">jul 2025 – jul 2026</span>
+        </a>
+        <a class="fila-t" href="#p-2" data-abre="p-2" title="Portafolio de Negocios S.R.L. · ago 2024 – jul 2026">
+          <span class="fila-nom">Portafolio de Negocios S.R.L.</span>
+          <span class="fila-pista"><span class="barra-t" style="left:85.789%;width:12.632%"></span></span>
+          <span class="fila-per">ago 2024 – jul 2026</span>
+        </a>
+        <a class="fila-t" href="#p-3" data-abre="p-3" title="Radio Urbano 106 FM · ago 2024 – dic 2025">
+          <span class="fila-nom">Radio Urbano 106 FM</span>
+          <span class="fila-pista"><span class="barra-t" style="left:85.789%;width:8.947%"></span></span>
+          <span class="fila-per">ago 2024 – dic 2025</span>
+        </a>
+        <a class="fila-t" href="#p-4" data-abre="p-4" title="ADN La Prueba · ago 2024 – dic 2025">
+          <span class="fila-nom">ADN La Prueba</span>
+          <span class="fila-pista"><span class="barra-t" style="left:85.789%;width:8.947%"></span></span>
+          <span class="fila-per">ago 2024 – dic 2025</span>
+        </a>
+        <a class="fila-t" href="#p-5" data-abre="p-5" title="Smart Fit Costa Rica · abr 2022 – jul 2024">
+          <span class="fila-nom">Smart Fit Costa Rica</span>
+          <span class="fila-pista"><span class="barra-t" style="left:71.053%;width:14.737%"></span></span>
+          <span class="fila-per">abr 2022 – jul 2024</span>
+        </a>
+        <a class="fila-t" href="#p-6" data-abre="p-6" title="UCR — Vicerrectoría de Investigación · ene 2020 – feb 2022">
+          <span class="fila-nom">UCR — Vicerrectoría de Investigación</span>
+          <span class="fila-pista"><span class="barra-t" style="left:56.842%;width:13.684%"></span></span>
+          <span class="fila-per">ene 2020 – feb 2022</span>
+        </a>
+        <a class="fila-t" href="#p-7" data-abre="p-7" title="UCR — Repositorio Centroamericano de Patrimonio Cultural · feb 2020 – ene 2022">
+          <span class="fila-nom">UCR — Repositorio Centroamericano de Patrimonio Cultural</span>
+          <span class="fila-pista"><span class="barra-t" style="left:57.368%;width:12.632%"></span></span>
+          <span class="fila-per">feb 2020 – ene 2022</span>
+        </a>
+        <a class="fila-t" href="#p-8" data-abre="p-8" title="Condominio la Colina · nov–dic de cada año, 2013 – 2021">
+          <span class="fila-nom">Condominio la Colina</span>
+          <span class="fila-pista"><span class="barra-t" style="left:17.895%;width:1.053%"></span><span class="barra-t" style="left:24.211%;width:1.053%"></span><span class="barra-t" style="left:30.526%;width:1.053%"></span><span class="barra-t" style="left:36.842%;width:1.053%"></span><span class="barra-t" style="left:43.158%;width:1.053%"></span><span class="barra-t" style="left:49.474%;width:1.053%"></span><span class="barra-t" style="left:55.789%;width:1.053%"></span><span class="barra-t" style="left:62.105%;width:1.053%"></span><span class="barra-t" style="left:68.421%;width:1.053%"></span></span>
+          <span class="fila-per">nov–dic de cada año, 2013 – 2021</span>
+        </a>
+        <a class="fila-t" href="#p-9" data-abre="p-9" title="Servicios técnicos por contrato · 2016 – 2019">
+          <span class="fila-nom">Servicios técnicos por contrato</span>
+          <span class="fila-pista"><span class="barra-t aprox" style="left:31.579%;width:25.263%"></span></span>
+          <span class="fila-per">2016 – 2019</span>
+        </a>
+        <a class="fila-t" href="#p-10" data-abre="p-10" title="Construcciones Jiménez · jul 2011 – dic 2015">
+          <span class="fila-nom">Construcciones Jiménez</span>
+          <span class="fila-pista"><span class="barra-t" style="left:3.158%;width:28.421%"></span></span>
+          <span class="fila-per">jul 2011 – dic 2015</span>
+        </a>
+        </div>
+      </div>
+      <ul class="leyenda">
+        <li><span class="mues"></span>Periodo con meses</li>
+        <li><span class="mues aprox"></span>Periodo dado en años</li>
+        <li><span class="mues actual"></span>Puesto actual</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="experiencia" class="seccion">
+    <div class="contenedor">
+      <header class="sec-cab revela">
+        <p class="sec-num">03</p>
+        <h2>Experiencia Profesional</h2>
+        <div class="sec-herr">
+          <button type="button" class="mini" data-todos="abrir">Abrir todo</button>
+          <button type="button" class="mini" data-todos="cerrar">Cerrar todo</button>
+        </div>
+      </header>
       <div class="linea">
-      <article class="puesto">
-        <div class="puesto-marca" aria-hidden="true"></div>
-        <header class="puesto-cab">
-          <h3>Encuestador telefónico — Recolección y registro de datos</h3>
-          <p class="puesto-org">UCR — Centro de Investigación y Estudios Políticos (CIEP)</p>
-          <p class="puesto-meta"><span class="periodo">ago 2026 – actualidad</span><span class="sep">·</span><span>Medio tiempo</span></p>
-        </header>
+      <details class="puesto revela" id="p-0" open>
+        <summary>
+          <span class="puesto-punto actual" aria-hidden="true"></span>
+          <span class="puesto-cab">
+            <span class="puesto-per">ago 2026 – actualidad <em class="sello">Actual</em></span>
+            <span class="puesto-cargo">Encuestador telefónico — Recolección y registro de datos</span>
+            <span class="puesto-org">UCR — Centro de Investigación y Estudios Políticos (CIEP)</span>
+            <span class="puesto-meta">Medio tiempo <span class="cuenta">3 logros</span></span>
+          </span>
+          <span class="puesto-flecha" aria-hidden="true"></span>
+        </summary>
         <ul class="vinetas"><li>Realizo alrededor de 25 encuestas telefónicas completas al día, de opinión pública y alcance nacional, desde el centro de llamadas.</li><li>Utilizo CSPro (Census and Survey Processing System) para registrar las respuestas obtenidas durante las entrevistas telefónicas.</li><li>Participo en la recopilación de información ciudadana que sirve de insumo para los estudios de opinión pública del CIEP-UCR.</li></ul>
-      </article>
-      <article class="puesto">
-        <div class="puesto-marca" aria-hidden="true"></div>
-        <header class="puesto-cab">
-          <h3>Gestión Comercial en Créditos y Cobranza</h3>
-          <p class="puesto-org">TORAM Portafolio S.R.L.</p>
-          <p class="puesto-meta"><span class="periodo">jul 2025 – jul 2026</span><span class="sep">·</span><span>Presencial, tiempo parcial · San José, Guadalupe</span></p>
-        </header>
+      </details>
+      <details class="puesto revela" id="p-1" open>
+        <summary>
+          <span class="puesto-punto" aria-hidden="true"></span>
+          <span class="puesto-cab">
+            <span class="puesto-per">jul 2025 – jul 2026</span>
+            <span class="puesto-cargo">Gestión Comercial en Créditos y Cobranza</span>
+            <span class="puesto-org">TORAM Portafolio S.R.L.</span>
+            <span class="puesto-meta">Presencial, tiempo parcial <span class="cuenta">6 logros</span></span>
+          </span>
+          <span class="puesto-flecha" aria-hidden="true"></span>
+        </summary>
         <ul class="vinetas"><li>Evalué la capacidad de pago de solicitantes de crédito y elevé los expedientes con recomendación de decisión.</li><li>Gestioné la cobranza de cartera vencida y negocié acuerdos de pago con clientes en mora, con acuerdos formalizados sobre aproximadamente el 65% de las cuentas de la cartera vencida asignada, en seis meses.</li><li>Di seguimiento a la morosidad de la cartera institucional, que se mantuvo por debajo del 5% sobre saldo a 90 días.</li><li>Organicé documentalmente los expedientes de crédito y apliqué controles de consistencia.</li><li>Atendí consultas de la cartera y documenté los casos recurrentes para estandarizar respuestas.</li><li>Elaboré reportes quincenales de gestión comercial en Excel, con indicadores de colocación, mora y efectividad de cobro, dirigidos a mi jefatura.</li></ul>
-      </article>
-      <article class="puesto">
-        <div class="puesto-marca" aria-hidden="true"></div>
-        <header class="puesto-cab">
-          <h3>Gestión de Propiedades (administración y mantenimiento)</h3>
-          <p class="puesto-org">Portafolio de Negocios S.R.L.</p>
-          <p class="puesto-meta"><span class="periodo">ago 2024 – jul 2026</span><span class="sep">·</span><span>Presencial, tiempo parcial · San José, Guadalupe — mismo edificio y oficina que TORAM</span></p>
-        </header>
+      </details>
+      <details class="puesto revela" id="p-2">
+        <summary>
+          <span class="puesto-punto" aria-hidden="true"></span>
+          <span class="puesto-cab">
+            <span class="puesto-per">ago 2024 – jul 2026</span>
+            <span class="puesto-cargo">Gestión de Propiedades (administración y mantenimiento)</span>
+            <span class="puesto-org">Portafolio de Negocios S.R.L.</span>
+            <span class="puesto-meta">Presencial, tiempo parcial <span class="cuenta">6 logros</span></span>
+          </span>
+          <span class="puesto-flecha" aria-hidden="true"></span>
+        </summary>
         <ul class="vinetas"><li>Seleccioné y evalué inquilinos verificando su capacidad de pago, con facultad de aprobación en calidad de administrador.</li><li>Administré una cartera en arrendamiento de 60 unidades entre apartamentos y locales comerciales, con ocupación registrada del 100% durante el período.</li><li>Coordiné cotizaciones y contrataciones con proveedores de reparación, mantenimiento y limpieza.</li><li>Organicé y resguardé los expedientes contractuales y la documentación de inquilinos.</li><li>Ejecuté la administración y el mantenimiento de los inmuebles.</li><li>Instalé sistemas de domótica WiFi y Zigbee en portones de edificios y en apartamentos de inquilinos.</li></ul>
-      </article>
-      <article class="puesto">
-        <div class="puesto-marca" aria-hidden="true"></div>
-        <header class="puesto-cab">
-          <h3>Asistente Operativo Multidisciplinario</h3>
-          <p class="puesto-org">Radio Urbano 106 FM</p>
-          <p class="puesto-meta"><span class="periodo">ago 2024 – dic 2025</span><span class="sep">·</span><span>Parcial, turno nocturno · San José, Curridabat</span></p>
-        </header>
+      </details>
+      <details class="puesto revela" id="p-3">
+        <summary>
+          <span class="puesto-punto" aria-hidden="true"></span>
+          <span class="puesto-cab">
+            <span class="puesto-per">ago 2024 – dic 2025</span>
+            <span class="puesto-cargo">Asistente Operativo Multidisciplinario</span>
+            <span class="puesto-org">Radio Urbano 106 FM</span>
+            <span class="puesto-meta">Parcial, turno nocturno <span class="cuenta">5 logros</span></span>
+          </span>
+          <span class="puesto-flecha" aria-hidden="true"></span>
+        </summary>
         <ul class="vinetas"><li>Brindé, junto con otras personas, apoyo operativo multidisciplinario, con coordinación entre departamentos.</li><li>Coordiné, junto con el equipo de la radio, la logística con proveedores y áreas internas en eventos, alrededor de diez en todo el período.</li><li>Ejecuté el control de acceso de visitantes y la aplicación de protocolos de seguridad.</li><li>Brindé soporte logístico y documental al departamento legal: contratos, permisos de transmisión, expedientes administrativos, y demandas y denuncias recibidas por la radio, además de casos externos atendidos por la abogada.</li><li>Operé herramientas de producción y transmisión —Audacity, Kdenlive, Adobe Audition, Adobe Photoshop y Virtual DJ— para mezcla musical y manejo de anuncios publicitarios.</li></ul>
-      </article>
-      <article class="puesto">
-        <div class="puesto-marca" aria-hidden="true"></div>
-        <header class="puesto-cab">
-          <h3>Asistente de Laboratorio y Atención al Cliente</h3>
-          <p class="puesto-org">ADN La Prueba</p>
-          <p class="puesto-meta"><span class="periodo">ago 2024 – dic 2025</span><span class="sep">·</span><span>Parcial, turno nocturno · San José, Curridabat — mismo edificio y oficina que Radio Urbano</span></p>
-        </header>
+      </details>
+      <details class="puesto revela" id="p-4">
+        <summary>
+          <span class="puesto-punto" aria-hidden="true"></span>
+          <span class="puesto-cab">
+            <span class="puesto-per">ago 2024 – dic 2025</span>
+            <span class="puesto-cargo">Asistente de Laboratorio y Atención al Cliente</span>
+            <span class="puesto-org">ADN La Prueba</span>
+            <span class="puesto-meta">Parcial, turno nocturno <span class="cuenta">6 logros</span></span>
+          </span>
+          <span class="puesto-flecha" aria-hidden="true"></span>
+        </summary>
         <ul class="vinetas"><li>Ejecuté de forma autónoma el ciclo del servicio en turno nocturno: recepción, explicación del procedimiento, toma de muestras, documentación y preparación de formularios de traslado.</li><li>Registré de forma estructurada los casos y apliqué controles de consistencia sobre la documentación, con un promedio de tres casos por turno en seis turnos semanales.</li><li>Di seguimiento a los casos por llamadas y mensajería hasta su resolución.</li><li>Apliqué criterios estrictos de confidencialidad y consentimiento informado, exigidos por la sensibilidad de los datos y por la validez legal de las muestras.</li><li>Apliqué protocolos de bioseguridad y de cadena de custodia.</li><li>Gestioné el servicio de extremo a extremo, desde la programación de citas hasta la entrega de resultados.</li></ul>
-      </article>
-      <article class="puesto">
-        <div class="puesto-marca" aria-hidden="true"></div>
-        <header class="puesto-cab">
-          <h3>Asesor de Ventas</h3>
-          <p class="puesto-org">Smart Fit Costa Rica</p>
-          <p class="puesto-meta"><span class="periodo">abr 2022 – jul 2024</span><span class="sep">·</span><span>Presencial, tiempo completo · al menos 7 sedes dentro de San José</span></p>
-        </header>
+      </details>
+      <details class="puesto revela" id="p-5">
+        <summary>
+          <span class="puesto-punto" aria-hidden="true"></span>
+          <span class="puesto-cab">
+            <span class="puesto-per">abr 2022 – jul 2024</span>
+            <span class="puesto-cargo">Asesor de Ventas</span>
+            <span class="puesto-org">Smart Fit Costa Rica</span>
+            <span class="puesto-meta">Presencial, tiempo completo <span class="cuenta">8 logros</span></span>
+          </span>
+          <span class="puesto-flecha" aria-hidden="true"></span>
+        </summary>
         <ul class="vinetas"><li>Vendí membresías mediante asesoría consultiva a clientes potenciales, con un promedio individual de 50 membresías mensuales entre altas y renovaciones.</li><li>Capté clientes nuevos explicando en detalle los planes de membresía, con material gráfico que elaboré para comparar sus beneficios.</li><li>Gestioné el seguimiento de prospectos y clientes en Salesforce.</li><li>Calculé y reporté al gerente de sede los indicadores de ticket promedio y tasa de abandono, a partir de datos de Salesforce exportados a Excel, en una función rotativa de elaboración de informes mensuales.</li><li>Capacité a colaboradores de distintas sedes en el uso de las plataformas y el abordaje a usuarios, cerca de 100 personas en seis sedes.</li><li>Organicé los registros de clientes y los contratos de membresía.</li><li>Reestructuré el archivo y la documentación interna aplicando criterios de organización documental.</li><li>Me desempeñé en al menos siete sedes distintas dentro de San José.</li></ul>
-      </article>
-      <article class="puesto">
-        <div class="puesto-marca" aria-hidden="true"></div>
-        <header class="puesto-cab">
-          <h3>Asistente en Editorial Académica</h3>
-          <p class="puesto-org">UCR — Vicerrectoría de Investigación</p>
-          <p class="puesto-meta"><span class="periodo">ene 2020 – feb 2022</span><span class="sep">·</span><span>Horas asistente, parcial · San Pedro, Montes de Oca</span></p>
-        </header>
+      </details>
+      <details class="puesto revela" id="p-6">
+        <summary>
+          <span class="puesto-punto" aria-hidden="true"></span>
+          <span class="puesto-cab">
+            <span class="puesto-per">ene 2020 – feb 2022</span>
+            <span class="puesto-cargo">Asistente en Editorial Académica</span>
+            <span class="puesto-org">UCR — Vicerrectoría de Investigación</span>
+            <span class="puesto-meta">Horas asistente, parcial <span class="cuenta">6 logros</span></span>
+          </span>
+          <span class="puesto-flecha" aria-hidden="true"></span>
+        </summary>
         <ul class="vinetas"><li>Validé artículos académicos y científicos marcados en XML-JATS, producidos por las universidades públicas de CONARE, para su indexación en SciELO, más de 500 artículos.</li><li>Documenté las inconsistencias detectadas para su corrección.</li><li>Señalé inconsistencias de estructura, contenido, imágenes y archivos adjuntos para la realización del marcaje con XML-JATS, para solicitarle la información correspondiente a la revista pertinente.</li><li>Escribí, modifiqué y ejecuté consultas SQL en MySQL y MariaDB, mediante MySQL Workbench, para verificación y cruce de información institucional.</li><li>Me desempeñé como facilitador y capacité en marcaje XML-JATS a editores y equipos de trabajo de otras universidades públicas.</li><li>Apliqué MARC21 y Dublin Core en tareas de descripción dentro del repositorio Kérwá.</li></ul>
-      </article>
-      <article class="puesto">
-        <div class="puesto-marca" aria-hidden="true"></div>
-        <header class="puesto-cab">
-          <h3>Asistente en Manejo de Colecciones Patrimoniales</h3>
-          <p class="puesto-org">UCR — Repositorio Centroamericano de Patrimonio Cultural</p>
-          <p class="puesto-meta"><span class="periodo">feb 2020 – ene 2022</span><span class="sep">·</span><span>Horas asistente, parcial · San Pedro, Montes de Oca</span></p>
-        </header>
+      </details>
+      <details class="puesto revela" id="p-7">
+        <summary>
+          <span class="puesto-punto" aria-hidden="true"></span>
+          <span class="puesto-cab">
+            <span class="puesto-per">feb 2020 – ene 2022</span>
+            <span class="puesto-cargo">Asistente en Manejo de Colecciones Patrimoniales</span>
+            <span class="puesto-org">UCR — Repositorio Centroamericano de Patrimonio Cultural</span>
+            <span class="puesto-meta">Horas asistente, parcial <span class="cuenta">3 logros</span></span>
+          </span>
+          <span class="puesto-flecha" aria-hidden="true"></span>
+        </summary>
         <ul class="vinetas"><li>Creé la descripción de ítems de colecciones patrimoniales —obras artísticas, en su mayoría pinturas— aplicando criterios de catalogación y clasificación de bibliotecología, más de 6.000 ítems.</li><li>Indicé, clasifiqué y actualicé los registros, cargándolos directamente en la plataforma DSpace.</li><li>Participé en la modificación de la interfaz del repositorio con HTML5 y CSS3.</li></ul>
-      </article>
-      <article class="puesto">
-        <div class="puesto-marca" aria-hidden="true"></div>
-        <header class="puesto-cab">
-          <h3>Guarda de Seguridad — Recepción</h3>
-          <p class="puesto-org">Condominio la Colina</p>
-          <p class="puesto-meta"><span class="periodo">nov–dic de cada año, 2013 – 2021</span><span class="sep">·</span><span>Sustitución de vacaciones, seis semanas al año, turno nocturno</span></p>
-        </header>
+      </details>
+      <details class="puesto revela" id="p-8">
+        <summary>
+          <span class="puesto-punto" aria-hidden="true"></span>
+          <span class="puesto-cab">
+            <span class="puesto-per">nov–dic de cada año, 2013 – 2021</span>
+            <span class="puesto-cargo">Guarda de Seguridad — Recepción</span>
+            <span class="puesto-org">Condominio la Colina</span>
+            <span class="puesto-meta">Sustitución de vacaciones, seis semanas al año, turno nocturno <span class="cuenta">2 logros</span></span>
+          </span>
+          <span class="puesto-flecha" aria-hidden="true"></span>
+        </summary>
         <ul class="vinetas"><li>Cubrí la recepción del edificio durante el período de vacaciones de los tres trabajadores fijos, con control de acceso de residentes y visitantes.</li><li>Sostuve un vínculo recurrente renovado por el mismo empleador durante nueve temporadas consecutivas de seis semanas, entre 2013 y 2021.</li></ul>
-      </article>
-      <article class="puesto">
-        <div class="puesto-marca" aria-hidden="true"></div>
-        <header class="puesto-cab">
-          <h3>Técnico de Mantenimiento e Instalaciones</h3>
-          <p class="puesto-org">Servicios técnicos por contrato</p>
-          <p class="puesto-meta"><span class="periodo">2016 – 2019</span><span class="sep">·</span><span>Por contrato, para contratistas y microempresas</span></p>
-        </header>
+      </details>
+      <details class="puesto revela" id="p-9">
+        <summary>
+          <span class="puesto-punto" aria-hidden="true"></span>
+          <span class="puesto-cab">
+            <span class="puesto-per">2016 – 2019</span>
+            <span class="puesto-cargo">Técnico de Mantenimiento e Instalaciones</span>
+            <span class="puesto-org">Servicios técnicos por contrato</span>
+            <span class="puesto-meta">Por contrato, para contratistas y microempresas <span class="cuenta">3 logros</span></span>
+          </span>
+          <span class="puesto-flecha" aria-hidden="true"></span>
+        </summary>
         <ul class="vinetas"><li>Ejecuté trabajos de mantenimiento y construcción para contratistas y microempresas.</li><li>Realicé instalaciones de servicios de banda ancha.</li><li>Realicé instalaciones de panel de control, cámaras de seguridad, sensores de movimiento y sistemas de control de acceso.</li></ul>
-      </article>
-      <article class="puesto">
-        <div class="puesto-marca" aria-hidden="true"></div>
-        <header class="puesto-cab">
-          <h3>Encargado de Bodega · Operario · Pintor</h3>
-          <p class="puesto-org">Construcciones Jiménez</p>
-          <p class="puesto-meta"><span class="periodo">jul 2011 – dic 2015</span><span class="sep">·</span><span>Presencial, tiempo completo, diurno</span></p>
-        </header>
+      </details>
+      <details class="puesto revela" id="p-10">
+        <summary>
+          <span class="puesto-punto" aria-hidden="true"></span>
+          <span class="puesto-cab">
+            <span class="puesto-per">jul 2011 – dic 2015</span>
+            <span class="puesto-cargo">Encargado de Bodega · Operario · Pintor</span>
+            <span class="puesto-org">Construcciones Jiménez</span>
+            <span class="puesto-meta">Presencial, tiempo completo, diurno <span class="cuenta">6 logros</span></span>
+          </span>
+          <span class="puesto-flecha" aria-hidden="true"></span>
+        </summary>
         <ul class="vinetas"><li>Recibí materiales, llevé el registro de entradas y salidas, realicé conteos y despaché desde la bodega de obra.</li><li>Elaboré la lista de faltantes de insumos y herramientas, y la sometí a revisión y aprobación del ingeniero o encargado.</li><li>Solicité proformas a depósitos, ferreterías y proveedores a partir de la lista aprobada.</li><li>Tramité el desembolso ante el departamento financiero y ejecuté la compra de insumos de uso regular y herramientas de reposición.</li><li>Ejecuté labores de operario de construcción.</li><li>Ejecuté labores de pintura en obra.</li></ul>
-      </article>
+      </details>
       </div>
     </div>
   </section>
 
-  <section id="competencias" class="seccion">
+  <section id="competencias" class="seccion alterna">
     <div class="contenedor">
-      <h2><span class="num">03</span>Competencias</h2>
-      <div class="rejilla">
-      <article class="tarjeta">
-        <h3>Organización de la información</h3>
+      <header class="sec-cab revela">
+        <p class="sec-num">04</p>
+        <h2>Competencias</h2>
+        <label class="buscador">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="m20 20-4.5-4.5"/></svg>
+          <input type="search" placeholder="Buscar: SQL, DSpace, cobranza…" aria-label="Buscar una competencia" data-buscar>
+          <span class="buscador-n" aria-live="polite" data-resultado></span>
+        </label>
+      </header>
+      <div class="rejilla-comp">
+      <article class="comp revela" data-comp>
+        <h3>Organización de la información <span class="comp-n">6</span></h3>
         <ul class="terminos"><li>catalogación, clasificación e indización</li><li>MARC21 y Dublin Core: metadatos aplicados a tareas de descripción</li><li>organización documental y de expedientes</li><li>expedientes legales y administrativos</li><li>control de consistencia documental</li><li>confidencialidad y consentimiento informado</li></ul>
       </article>
-      <article class="tarjeta">
-        <h3>Repositorios y publicación académica</h3>
+      <article class="comp revela" data-comp>
+        <h3>Repositorios y publicación académica <span class="comp-n">5</span></h3>
         <ul class="terminos"><li>DSpace: creación, carga y actualización de registros</li><li>XML-JATS: validación de estructura y marcado</li><li>validación de artículos para su indexación en SciELO</li><li>tareas de descripción en el repositorio Kérwá</li><li>señalamiento de inconsistencias a las revistas para el marcaje XML-JATS</li></ul>
       </article>
-      <article class="tarjeta">
-        <h3>SQL, Excel y reportería de indicadores</h3>
+      <article class="comp revela" data-comp>
+        <h3>SQL, Excel y reportería de indicadores <span class="comp-n">5</span></h3>
         <ul class="terminos"><li>SQL: escritura, modificación y ejecución de consultas</li><li>MySQL y MySQL Workbench</li><li>Microsoft Excel: limpieza de datos, fórmulas, tablas dinámicas y Power Query</li><li>elaboración de reportes periódicos de indicadores</li><li>CSPro: registro de respuestas de encuestas telefónicas</li></ul>
       </article>
-      <article class="tarjeta">
-        <h3>Indicadores comerciales y seguimiento de morosidad</h3>
+      <article class="comp revela" data-comp>
+        <h3>Indicadores comerciales y seguimiento de morosidad <span class="comp-n">3</span></h3>
         <ul class="terminos"><li>ticket promedio y tasa de abandono</li><li>colocación, mora y efectividad de cobro</li><li>morosidad sobre saldo a 90 días</li></ul>
       </article>
-      <article class="tarjeta">
-        <h3>Gestión comercial, capacidad de pago y cobranza</h3>
+      <article class="comp revela" data-comp>
+        <h3>Gestión comercial, capacidad de pago y cobranza <span class="comp-n">6</span></h3>
         <ul class="terminos"><li>venta consultiva de membresías</li><li>seguimiento de prospectos y clientes en Salesforce</li><li>evaluación de capacidad de pago</li><li>cobranza de cartera vencida y negociación de acuerdos de pago</li><li>administración de arrendamientos</li><li>coordinación con proveedores, solicitud de proformas y ejecución de compras dentro de lo aprobado</li></ul>
       </article>
-      <article class="tarjeta">
-        <h3>Formación de personal</h3>
+      <article class="comp revela" data-comp>
+        <h3>Formación de personal <span class="comp-n">2</span></h3>
         <ul class="terminos"><li>capacitación en marcaje XML-JATS a editores y equipos de trabajo de universidades públicas</li><li>capacitación en plataformas y abordaje a usuarios</li></ul>
       </article>
-      <article class="tarjeta">
-        <h3>Tecnología y web</h3>
+      <article class="comp revela" data-comp>
+        <h3>Tecnología y web <span class="comp-n">2</span></h3>
         <ul class="terminos"><li>HTML5 y CSS3 aplicados a la interfaz de un repositorio</li><li>consultas SQL en bases de datos relacionales (MySQL y MariaDB)</li></ul>
       </article>
-      <article class="tarjeta">
-        <h3>Servicios técnicos</h3>
+      <article class="comp revela" data-comp>
+        <h3>Servicios técnicos <span class="comp-n">7</span></h3>
         <ul class="terminos"><li>instalación de servicios de banda ancha</li><li>instalación de cámaras de seguridad, sensores de movimiento, paneles de control y control de acceso</li><li>domótica WiFi y Zigbee</li><li>mantenimiento de inmuebles</li><li>mantenimiento y construcción</li><li>control de inventario de bodega</li><li>bioseguridad y cadena de custodia</li></ul>
       </article>
-      <article class="tarjeta">
-        <h3>Herramientas de producción y transmisión</h3>
+      <article class="comp revela" data-comp>
+        <h3>Herramientas de producción y transmisión <span class="comp-n">1</span></h3>
         <ul class="terminos"><li>Audacity, Kdenlive, Adobe Audition y Adobe Photoshop</li></ul>
       </article>
       </div>
-      <div class="notas-comp"><div class="nota-comp"><strong>Idiomas.</strong> Español (nativo). Inglés: A2 (EF SET, setiembre de 2026).</div><div class="nota-comp"><strong>En aprendizaje.</strong> Power BI, Python y R. Sin uso profesional registrado.</div></div>
+      <p class="sin-resultado" hidden data-vacio>Ninguna competencia coincide con la búsqueda.</p>
+      <div class="notas"><div class="nota"><span class="nota-rot">Idiomas</span><p>Español (nativo). Inglés: A2 (EF SET, setiembre de 2026).</p></div><div class="nota"><span class="nota-rot">En aprendizaje</span><p>Power BI, Python y R. Sin uso profesional registrado.</p></div></div>
     </div>
   </section>
 
-  <section id="formacion" class="seccion alterna">
+  <section id="formacion" class="seccion">
     <div class="contenedor">
-      <h2><span class="num">04</span>Formación Académica</h2>
-      <div class="dos">
-        <div>
-          <h3 class="sub">Estudios</h3>
-          <ul class="formacion">
-      <li>
-        <p class="f-titulo">Estudios en Bibliotecología con énfasis en Ciencias de la Información</p>
-        <p class="f-inst">Universidad de Costa Rica</p>
-        <p class="f-fecha">Inicio 2020 · En curso</p>
-      </li>
-      <li>
-        <p class="f-titulo">Estudios en Filosofía con énfasis en Docencia</p>
-        <p class="f-inst">Universidad de Costa Rica</p>
-        <p class="f-fecha">Inicio 2019 · En curso</p>
-      </li>
-      <li>
-        <p class="f-titulo">Estudios en Ingeniería Informática</p>
-        <p class="f-inst">Universidad Estatal a Distancia (UNED)</p>
-        <p class="f-fecha">Inicio 2013 · Pausado</p>
-      </li>
-      <li>
-        <p class="f-titulo">Técnico en Telecomunicaciones y Telemática — cableado estructurado, fibra óptica e instalación de servicios de banda ancha</p>
-        <p class="f-inst">Instituto Nacional de Aprendizaje</p>
-        <p class="f-fecha">enero – julio 2011 · Título obtenido</p>
-      </li>
-      <li>
-        <p class="f-titulo">Bachillerato en Educación Media</p>
-        <p class="f-inst">Ministerio de Educación Pública</p>
-        <p class="f-fecha">mayo 2011 · Concluido</p>
-      </li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="sub">Formación Complementaria y Credenciales</h3>
-          <ul class="complementaria">
-      <li><span class="c-act">I Simposio Internacional: Tendencias en la organización de la información y el conocimiento</span><span class="c-inst">UCR, Escuela de Bibliotecología y Ciencias de la Información · noviembre 2019</span></li>
-      <li><span class="c-act">Taller: Las reglas de contenido y la interoperabilidad global de datos bibliográficos, archivísticos y museográficos</span><span class="c-inst">UCR, Escuela de Bibliotecología y Ciencias de la Información · noviembre 2019</span></li>
-      <li><span class="c-act">Inmersión en Agentes de Inteligencia Artificial</span><span class="c-inst">Alura Latam · abril – mayo 2026</span></li>
-      <li><span class="c-act">Programador de Páginas Web</span><span class="c-inst">INA, Gravilias · diciembre 2013</span></li>
-      <li><span class="c-act">Internet · Introducción a la Computación</span><span class="c-inst">INA, Gravilias · diciembre 2012</span></li>
-      <li><span class="c-act">Audacity — edición de audio · Kdenlive — edición de video</span><span class="c-inst">UCR, Centro de Informática · julio 2015 y noviembre 2015</span></li>
-          </ul>
-          <ul class="credenciales"><li>Carné de Manipulación de Alimentos — emisión original enero de 2013, renovado periódicamente; vigencia declarada hasta enero de 2027</li></ul>
-        </div>
+      <header class="sec-cab revela">
+        <p class="sec-num">05</p>
+        <h2>Formación</h2>
+      </header>
+      <div class="pestanas" role="tablist" aria-label="Formación">
+        <button role="tab" type="button" id="tab-est" aria-controls="pan-est" aria-selected="true">Formación Académica</button>
+        <button role="tab" type="button" id="tab-com" aria-controls="pan-com" aria-selected="false">Formación Complementaria y Credenciales</button>
+      </div>
+      <div class="panel" role="tabpanel" id="pan-est" aria-labelledby="tab-est">
+        <ul class="estudios">
+        <li class="estudio revela">
+          <span class="estado curso">En curso</span>
+          <p class="f-titulo">Estudios en Bibliotecología con énfasis en Ciencias de la Información</p>
+          <p class="f-inst">Universidad de Costa Rica</p>
+          <p class="f-fecha">Inicio 2020</p>
+        </li>
+        <li class="estudio revela">
+          <span class="estado curso">En curso</span>
+          <p class="f-titulo">Estudios en Filosofía con énfasis en Docencia</p>
+          <p class="f-inst">Universidad de Costa Rica</p>
+          <p class="f-fecha">Inicio 2019</p>
+        </li>
+        <li class="estudio revela">
+          <span class="estado pausa">Pausado</span>
+          <p class="f-titulo">Estudios en Ingeniería Informática</p>
+          <p class="f-inst">Universidad Estatal a Distancia (UNED)</p>
+          <p class="f-fecha">Inicio 2013</p>
+        </li>
+        <li class="estudio revela">
+          <span class="estado hecho">Título obtenido</span>
+          <p class="f-titulo">Técnico en Telecomunicaciones y Telemática — cableado estructurado, fibra óptica e instalación de servicios de banda ancha</p>
+          <p class="f-inst">Instituto Nacional de Aprendizaje</p>
+          <p class="f-fecha">enero – julio 2011</p>
+        </li>
+        <li class="estudio revela">
+          <span class="estado hecho">Concluido</span>
+          <p class="f-titulo">Bachillerato en Educación Media</p>
+          <p class="f-inst">Ministerio de Educación Pública</p>
+          <p class="f-fecha">mayo 2011</p>
+        </li>
+        </ul>
+      </div>
+      <div class="panel" role="tabpanel" id="pan-com" aria-labelledby="tab-com">
+        <ul class="cursos">
+        <li class="curso revela"><span class="c-fecha">noviembre 2019</span><span class="c-act">I Simposio Internacional: Tendencias en la organización de la información y el conocimiento</span><span class="c-inst">UCR, Escuela de Bibliotecología y Ciencias de la Información</span></li>
+        <li class="curso revela"><span class="c-fecha">noviembre 2019</span><span class="c-act">Taller: Las reglas de contenido y la interoperabilidad global de datos bibliográficos, archivísticos y museográficos</span><span class="c-inst">UCR, Escuela de Bibliotecología y Ciencias de la Información</span></li>
+        <li class="curso revela"><span class="c-fecha">abril – mayo 2026</span><span class="c-act">Inmersión en Agentes de Inteligencia Artificial</span><span class="c-inst">Alura Latam</span></li>
+        <li class="curso revela"><span class="c-fecha">diciembre 2013</span><span class="c-act">Programador de Páginas Web</span><span class="c-inst">INA, Gravilias</span></li>
+        <li class="curso revela"><span class="c-fecha">diciembre 2012</span><span class="c-act">Internet · Introducción a la Computación</span><span class="c-inst">INA, Gravilias</span></li>
+        <li class="curso revela"><span class="c-fecha">julio 2015 y noviembre 2015</span><span class="c-act">Audacity — edición de audio · Kdenlive — edición de video</span><span class="c-inst">UCR, Centro de Informática</span></li><li class="credencial revela"><span class="c-fecha">Credencial</span><span class="c-act">Carné de Manipulación de Alimentos — emisión original enero de 2013, renovado periódicamente; vigencia declarada hasta enero de 2027</span></li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <section id="publicaciones" class="seccion">
+  <section id="obra" class="seccion alterna">
     <div class="contenedor">
-      <h2><span class="num">05</span>Publicaciones</h2>
+      <header class="sec-cab revela">
+        <p class="sec-num">06</p>
+        <h2>Publicaciones y proyectos</h2>
+      </header>
       
-      <article class="pub">
+      <article class="pub revela">
         <p class="pub-anio">2020</p>
-        <div><h3>Publicaciones de Profrijol — Programa Cooperativo Regional de Frijol para Centroamérica, México y el Caribe</h3><p>Informe en coautoría con Rodolfo Araya Villalobos y Christian David Zamora Rodríguez · Repositorio Kérwá, Universidad de Costa Rica · ISBN 978-9968-919-67-8 · handle 10669/84228</p></div>
+        <div class="pub-cuerpo"><h3>Publicaciones de Profrijol — Programa Cooperativo Regional de Frijol para Centroamérica, México y el Caribe</h3><p>Informe en coautoría con Rodolfo Araya Villalobos y Christian David Zamora Rodríguez · Repositorio Kérwá, Universidad de Costa Rica · ISBN 978-9968-919-67-8 · handle 10669/84228</p></div>
       </article>
-    </div>
-  </section>
-
-  <section id="proyectos" class="seccion alterna">
-    <div class="contenedor">
-      <h2><span class="num">06</span>Proyectos, participaciones y colaboraciones</h2>
-      <p class="aclara">Actividades que no corresponden a un vínculo con un empleador y que por eso no figuran como experiencia laboral.</p>
-      <div class="rejilla">
-      <article class="tarjeta">
+      <h3 class="sub-obra revela">Proyectos</h3>
+      <div class="rejilla-obra">
+      <article class="obra revela">
+        <p class="obra-tipo">Proyecto</p>
         <h3>Remodelación y reforma de vivienda propia</h3>
-        <p class="periodo">julio 2026 – actualidad</p>
+        <p class="obra-per">julio 2026 – actualidad</p>
         <ul class="vinetas"><li>Remodelé y reformé la estructura: revestimiento, masilla, gypsum, pintura y acabados.</li><li>Realicé las instalaciones eléctricas y de fontanería.</li><li>Instalé un sistema de domótica por WiFi y Zigbee.</li><li>Fabriqué a la medida los muebles de melamina.</li></ul>
       </article>
-      <article class="tarjeta">
+      <article class="obra revela">
+        <p class="obra-tipo">Proyecto</p>
         <h3>Construcción de vivienda familiar</h3>
-        <p class="periodo">2015 – 2016</p>
+        <p class="obra-per">2015 – 2016</p>
         <ul class="vinetas"><li>Participé en la construcción de la primera vivienda familiar, ejecutada por el núcleo familiar durante aproximadamente un año, entre 2015 y 2016.</li></ul>
       </article>
-      <article class="tarjeta">
+      </div>
+      <h3 class="sub-obra revela">Participaciones y Colaboraciones</h3>
+      <p class="aclara revela">Actividades que no corresponden a un vínculo con un empleador y que por eso no figuran como experiencia laboral.</p>
+      <div class="rejilla-obra">
+      <article class="obra revela">
+        <p class="obra-tipo">Colaboración — no es un vínculo con un empleador externo</p>
         <h3>Negocio familiar de alimentos preparados</h3>
-        <p class="tarjeta-sub">Colaboración — no es un vínculo con un empleador externo</p>
-        <p class="periodo">2016 – 2019</p>
+        <p class="obra-per">2016 – 2019</p>
         <ul class="vinetas"><li>Colaboré en el negocio familiar de venta de alimentos preparados.</li></ul>
       </article>
-      <article class="tarjeta">
+      <article class="obra revela">
+        <p class="obra-tipo">Apoyo logístico y operativo</p>
         <h3>Encuentro de RedCLARA — Cooperación Latinoamericana de Redes Avanzadas</h3>
-        <p class="tarjeta-sub">Apoyo logístico y operativo</p>
-        <p class="periodo">julio 2017</p>
+        <p class="obra-per">julio 2017</p>
         <ul class="vinetas"><li>Brindé, junto con otras personas, apoyo logístico y operativo en la apertura y el cierre de cada jornada de actividades de un encuentro de la organización.</li></ul>
       </article>
       </div>
@@ -297,14 +476,20 @@
   </section>
 
   <section id="contacto" class="seccion contacto">
-    <div class="contenedor estrecho">
-      <h2><span class="num">07</span>Contacto</h2>
-      <p class="contacto-txt">Para una entrevista o para recibir el currículo completo, escríbame:</p>
-      <p class="correo"><a href="mailto:gagocr00@gmail.com">gagocr00@gmail.com</a></p>
-      <ul class="perfiles">
-        <li><a href="https://linkedin.com/in/gagocr" rel="noopener" target="_blank">linkedin.com/in/gagocr</a></li>
-        <li><a href="https://researchgate.net/profile/Ruben-Gago-Chavez-2" rel="noopener" target="_blank">researchgate.net/profile/Ruben-Gago-Chavez-2</a></li>
-      </ul>
+    <div class="contenedor">
+      <div class="contacto-caja revela">
+        <p class="sec-num">07</p>
+        <h2>Conversemos</h2>
+        <p class="contacto-txt">Para una entrevista o para recibir el currículo completo, escríbame:</p>
+        <div class="correo">
+          <a href="mailto:gagocr00@gmail.com">gagocr00@gmail.com</a>
+          <button class="copiar grande" type="button" data-copiar="gagocr00@gmail.com">Copiar correo</button>
+        </div>
+        <ul class="perfiles">
+          <li><a class="boton" href="https://linkedin.com/in/gagocr" rel="noopener" target="_blank">LinkedIn</a></li>
+          <li><a class="boton" href="https://researchgate.net/profile/Ruben-Gago-Chavez-2" rel="noopener" target="_blank">ResearchGate</a></li>
+        </ul>
+      </div>
     </div>
   </section>
 </main>
@@ -312,8 +497,11 @@
 <footer class="pie">
   <div class="contenedor">
     <p>Rubén Gago Chavez · Costa Rica</p>
-    <p class="pie-fuente">Contenido tomado del currículo de referencia, Registro Maestro v3.20.</p>
+    <p>Contenido tomado del currículo de referencia, Registro Maestro v3.20.</p>
   </div>
 </footer>
+<a class="arriba" href="#inicio" aria-label="Volver arriba">↑</a>
+<div class="aviso" role="status" aria-live="polite" hidden></div>
+<script src="assets/js/sitio.js" defer></script>
 </body>
 </html>
