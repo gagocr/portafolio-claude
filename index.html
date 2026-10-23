@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Rubén Gago Chavez — Currículo</title>
+<title>Rubén Gago Chavez — Portafolio profesional</title>
 <meta name="description" content="Rubén Gago Chavez — Organización Documental y de la Información · SQL, Excel e Indicadores · Gestión Comercial · Servicios Técnicos">
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#0d4a8d">
@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap">
 <link rel="stylesheet" href="assets/css/estilo.css">
 <script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('tema');if(t)document.documentElement.dataset.theme=t}catch(_){}</script>
+<link rel="stylesheet" href="assets/css/explorar.css">
 </head>
 <body>
 <a class="saltar" href="#perfil">Ir al contenido</a>
@@ -32,11 +33,11 @@
     <div class="trama" aria-hidden="true"></div>
     <div class="contenedor portada-in">
       <div class="portada-txt">
-        <p class="sobre"><span class="pulso" aria-hidden="true"></span>Currículo · Costa Rica</p>
+        <p class="sobre"><span class="pulso" aria-hidden="true"></span>Portafolio profesional · Costa Rica</p>
         <h1>Rubén Gago Chavez</h1>
-        <ul class="areas"><li>Organización Documental y de la Información</li><li>SQL, Excel e Indicadores</li><li>Gestión Comercial</li><li>Servicios Técnicos</li></ul>
+        <p class="portada-lema">Información, criterio<br>y trabajo aplicado.</p><ul class="areas"><li>Organización Documental y de la Información</li><li>SQL, Excel e Indicadores</li><li>Gestión Comercial</li><li>Servicios Técnicos</li></ul>
         <p class="entrada">Mi trayectoria laboral comenzó en 2011 y abarca la organización de la información, las consultas SQL y la reportería de indicadores, la gestión comercial, los servicios técnicos y, desde agosto de 2026, la aplicación de encuestas telefónicas de opinión pública en el CIEP de la UCR.</p>
-        <div class="acciones">
+        <div class="acciones"><a class="boton primario" href="#explorar">Explorar mi perfil ↗</a>
           <a class="boton primario" href="mailto:gagocr00@gmail.com">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3z"/><path d="m3 7 9 6 9-6"/></svg>Escribirme</a>
           <a class="boton" href="https://linkedin.com/in/gagocr" rel="noopener" target="_blank">LinkedIn</a>
@@ -46,11 +47,11 @@
         </div>
       </div>
 
-      <aside class="ficha" aria-label="Ficha de registro">
+      <aside class="ficha" aria-label="Mi perfil, de un vistazo">
         <div class="ficha-cab">
           <span class="monograma" aria-hidden="true">RG</span>
           <div>
-            <p class="ficha-rot">Ficha de registro</p>
+            <p class="ficha-rot">Mi perfil, de un vistazo</p>
             <p class="ficha-nom">Rubén Gago Chavez</p>
           </div>
         </div>
@@ -74,7 +75,20 @@
     </ul></div>
   </section>
 
-  <section id="perfil" class="seccion">
+  
+<section class="explorador seccion" id="explorar" aria-labelledby="explorar-titulo">
+ <div class="contenedor">
+  <div class="explorar-cab"><div><p class="sobre">CUATRO ÁREAS · UNA TRAYECTORIA</p><h2 id="explorar-titulo">Explora lo que puedo aportar.</h2></div><p>Elige un área y descubre las funciones, herramientas y entornos donde he trabajado.</p></div>
+  <div class="rutas">
+   <a class="ruta ruta-documental" href="#experiencia" data-ruta="documental"><span class="ruta-num">01 / INFORMACIÓN</span><span class="ruta-icono" aria-hidden="true">▤</span><h3>Dar orden<br>a la información.</h3><p>Expedientes, colecciones patrimoniales y publicación académica.</p><span class="ruta-herr">DSpace · XML-JATS · Metadatos</span><span class="ruta-ir">Explorar experiencia <b>↗</b></span></a>
+   <a class="ruta ruta-datos" href="#experiencia" data-ruta="datos"><span class="ruta-num">02 / DATOS</span><span class="ruta-icono" aria-hidden="true">⌗</span><h3>Consultar, registrar<br>y reportar.</h3><p>Consultas SQL, indicadores comerciales y encuestas de opinión.</p><span class="ruta-herr">SQL · Excel · CSPro</span><span class="ruta-ir">Explorar experiencia <b>↗</b></span></a>
+   <a class="ruta ruta-comercial" href="#experiencia" data-ruta="comercial"><span class="ruta-num">03 / GESTIÓN</span><span class="ruta-icono" aria-hidden="true">⇄</span><h3>Acompañar<br>cada proceso.</h3><p>Asesoría de ventas, acuerdos de pago y administración de propiedades.</p><span class="ruta-herr">Salesforce · Clientes · Proveedores</span><span class="ruta-ir">Explorar experiencia <b>↗</b></span></a>
+   <a class="ruta ruta-tecnica" href="#experiencia" data-ruta="tecnica"><span class="ruta-num">04 / TÉCNICA</span><span class="ruta-icono" aria-hidden="true">⌘</span><h3>Llevar las tareas<br>a la práctica.</h3><p>Instalaciones, domótica, mantenimiento y operación de bodega.</p><span class="ruta-herr">Banda ancha · WiFi · Zigbee</span><span class="ruta-ir">Explorar experiencia <b>↗</b></span></a>
+  </div>
+ </div>
+</section>
+
+<section id="perfil" class="seccion">
     <div class="contenedor dos-col">
       <header class="sec-cab revela">
         <p class="sec-num">01</p>
@@ -171,7 +185,12 @@
           <button type="button" class="mini" data-todos="cerrar">Cerrar todo</button>
         </div>
       </header>
-      <div class="linea">
+      <div class="explorar-filtros solo-sitio" hidden>
+ <label class="buscar-puesto">Buscar en la trayectoria<input type="search" id="buscar-puesto" placeholder="Empresa, herramienta o función…" autocomplete="off"></label>
+ <div class="filtros-area" role="group" aria-label="Filtrar experiencia"><button type="button" data-area="todas" aria-pressed="true">Todas</button><button type="button" data-area="documental" aria-pressed="false">Información</button><button type="button" data-area="datos" aria-pressed="false">Datos</button><button type="button" data-area="comercial" aria-pressed="false">Gestión</button><button type="button" data-area="tecnica" aria-pressed="false">Técnica</button><button type="button" data-area="operativa" aria-pressed="false">Operación</button></div>
+ <p id="resultado-puestos" role="status"></p><button type="button" class="mini" id="limpiar-puestos">Restablecer vista</button>
+</div>
+<div class="linea">
       <details class="puesto revela" id="p-0" open>
         <summary>
           <span class="puesto-punto actual" aria-hidden="true"></span>
@@ -179,7 +198,7 @@
             <span class="puesto-per">ago 2026 – actualidad <em class="sello">Actual</em></span>
             <span class="puesto-cargo">Encuestador telefónico — Recolección y registro de datos</span>
             <span class="puesto-org">UCR — Centro de Investigación y Estudios Políticos (CIEP)</span>
-            <span class="puesto-meta">Medio tiempo <span class="cuenta">3 logros</span></span>
+            <span class="puesto-meta">Medio tiempo <span class="cuenta">3 funciones</span></span>
           </span>
           <span class="puesto-flecha" aria-hidden="true"></span>
         </summary>
@@ -192,7 +211,7 @@
             <span class="puesto-per">jul 2025 – jul 2026</span>
             <span class="puesto-cargo">Gestión Comercial en Créditos y Cobranza</span>
             <span class="puesto-org">TORAM Portafolio S.R.L.</span>
-            <span class="puesto-meta">Presencial, tiempo parcial <span class="cuenta">6 logros</span></span>
+            <span class="puesto-meta">Presencial, tiempo parcial <span class="cuenta">6 funciones</span></span>
           </span>
           <span class="puesto-flecha" aria-hidden="true"></span>
         </summary>
@@ -205,7 +224,7 @@
             <span class="puesto-per">ago 2024 – jul 2026</span>
             <span class="puesto-cargo">Gestión de Propiedades (administración y mantenimiento)</span>
             <span class="puesto-org">Portafolio de Negocios S.R.L.</span>
-            <span class="puesto-meta">Presencial, tiempo parcial <span class="cuenta">6 logros</span></span>
+            <span class="puesto-meta">Presencial, tiempo parcial <span class="cuenta">6 funciones</span></span>
           </span>
           <span class="puesto-flecha" aria-hidden="true"></span>
         </summary>
@@ -218,7 +237,7 @@
             <span class="puesto-per">ago 2024 – dic 2025</span>
             <span class="puesto-cargo">Asistente Operativo Multidisciplinario</span>
             <span class="puesto-org">Radio Urbano 106 FM</span>
-            <span class="puesto-meta">Parcial, turno nocturno <span class="cuenta">5 logros</span></span>
+            <span class="puesto-meta">Parcial, turno nocturno <span class="cuenta">5 funciones</span></span>
           </span>
           <span class="puesto-flecha" aria-hidden="true"></span>
         </summary>
@@ -231,7 +250,7 @@
             <span class="puesto-per">ago 2024 – dic 2025</span>
             <span class="puesto-cargo">Asistente de Laboratorio y Atención al Cliente</span>
             <span class="puesto-org">ADN La Prueba</span>
-            <span class="puesto-meta">Parcial, turno nocturno <span class="cuenta">6 logros</span></span>
+            <span class="puesto-meta">Parcial, turno nocturno <span class="cuenta">6 funciones</span></span>
           </span>
           <span class="puesto-flecha" aria-hidden="true"></span>
         </summary>
@@ -244,7 +263,7 @@
             <span class="puesto-per">abr 2022 – jul 2024</span>
             <span class="puesto-cargo">Asesor de Ventas</span>
             <span class="puesto-org">Smart Fit Costa Rica</span>
-            <span class="puesto-meta">Presencial, tiempo completo <span class="cuenta">8 logros</span></span>
+            <span class="puesto-meta">Presencial, tiempo completo <span class="cuenta">8 funciones</span></span>
           </span>
           <span class="puesto-flecha" aria-hidden="true"></span>
         </summary>
@@ -257,7 +276,7 @@
             <span class="puesto-per">ene 2020 – feb 2022</span>
             <span class="puesto-cargo">Asistente en Editorial Académica</span>
             <span class="puesto-org">UCR — Vicerrectoría de Investigación</span>
-            <span class="puesto-meta">Horas asistente, parcial <span class="cuenta">6 logros</span></span>
+            <span class="puesto-meta">Horas asistente, parcial <span class="cuenta">6 funciones</span></span>
           </span>
           <span class="puesto-flecha" aria-hidden="true"></span>
         </summary>
@@ -270,7 +289,7 @@
             <span class="puesto-per">feb 2020 – ene 2022</span>
             <span class="puesto-cargo">Asistente en Manejo de Colecciones Patrimoniales</span>
             <span class="puesto-org">UCR — Repositorio Centroamericano de Patrimonio Cultural</span>
-            <span class="puesto-meta">Horas asistente, parcial <span class="cuenta">3 logros</span></span>
+            <span class="puesto-meta">Horas asistente, parcial <span class="cuenta">3 funciones</span></span>
           </span>
           <span class="puesto-flecha" aria-hidden="true"></span>
         </summary>
@@ -283,7 +302,7 @@
             <span class="puesto-per">nov–dic de cada año, 2013 – 2021</span>
             <span class="puesto-cargo">Guarda de Seguridad — Recepción</span>
             <span class="puesto-org">Condominio la Colina</span>
-            <span class="puesto-meta">Sustitución de vacaciones, seis semanas al año, turno nocturno <span class="cuenta">2 logros</span></span>
+            <span class="puesto-meta">Sustitución de vacaciones, seis semanas al año, turno nocturno <span class="cuenta">2 funciones</span></span>
           </span>
           <span class="puesto-flecha" aria-hidden="true"></span>
         </summary>
@@ -296,7 +315,7 @@
             <span class="puesto-per">2016 – 2019</span>
             <span class="puesto-cargo">Técnico de Mantenimiento e Instalaciones</span>
             <span class="puesto-org">Servicios técnicos por contrato</span>
-            <span class="puesto-meta">Por contrato, para contratistas y microempresas <span class="cuenta">3 logros</span></span>
+            <span class="puesto-meta">Por contrato, para contratistas y microempresas <span class="cuenta">3 funciones</span></span>
           </span>
           <span class="puesto-flecha" aria-hidden="true"></span>
         </summary>
@@ -309,7 +328,7 @@
             <span class="puesto-per">jul 2011 – dic 2015</span>
             <span class="puesto-cargo">Encargado de Bodega · Operario · Pintor</span>
             <span class="puesto-org">Construcciones Jiménez</span>
-            <span class="puesto-meta">Presencial, tiempo completo, diurno <span class="cuenta">6 logros</span></span>
+            <span class="puesto-meta">Presencial, tiempo completo, diurno <span class="cuenta">6 funciones</span></span>
           </span>
           <span class="puesto-flecha" aria-hidden="true"></span>
         </summary>
@@ -503,5 +522,7 @@
 <a class="arriba" href="#inicio" aria-label="Volver arriba">↑</a>
 <div class="aviso" role="status" aria-live="polite" hidden></div>
 <script src="assets/js/sitio.js" defer></script>
+<script src="assets/js/explorar.js" defer></script>
 </body>
 </html>
+

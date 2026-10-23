@@ -111,7 +111,7 @@ for i, p in enumerate(puestos):
       </details>""" % (i, " open" if i < 2 else "", " actual" if actual else "", e(p["per"]),
                        ' <em class="sello">Actual</em>' if actual else "", e(p["cargo"]), e(p["nom"]),
                        e(sin_lugar(p["mod"])) if p.get("mod") else "",
-                       ' <span class="cuenta">%d %s</span>' % (len(vin), "logro" if len(vin) == 1 else "logros") if vin else "",
+                       ' <span class="cuenta">%d %s</span>' % (len(vin), "función" if len(vin) == 1 else "funciones") if vin else "",
                        lista(vin, "vinetas")))
 
 # ---------- competencias
@@ -416,6 +416,8 @@ for sub in ("assets/css", "assets/img", "assets/js"):
 (OUT / "index.html").write_text(pagina, encoding="utf-8")
 (OUT / "assets/css/estilo.css").write_text(css, encoding="utf-8")
 (OUT / "assets/js/sitio.js").write_text(js, encoding="utf-8")
+from mejorar_presentacion import mejorar
+mejorar(OUT)
 print("index.html", len(pagina))
 
 if PREVIA:
@@ -423,3 +425,4 @@ if PREVIA:
               "<script>document.documentElement.classList.add('js')</script>\n%s<script>\n%s\n</script>\n") % (FUENTES, css, cuerpo, js)
     PREVIA.write_text(previa, encoding="utf-8")
     print("vista previa", len(previa))
+

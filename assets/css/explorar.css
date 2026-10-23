@@ -1,0 +1,28 @@
+/* Exploración por áreas, ampliación de la presentación existente. */
+.portada{background:radial-gradient(ellipse at 85% 20%,var(--acento-fondo),transparent 60%),var(--fondo)}
+.portada h1{font-size:clamp(2.4rem,5.2vw,5rem);letter-spacing:-.055em;line-height:1.04}
+.portada-lema{font-family:var(--serif);font-size:clamp(1.6rem,3.3vw,3rem);line-height:1.2;color:var(--acento);margin:1.2rem 0 1.7rem;letter-spacing:-.025em}
+.ficha{transform:rotate(2deg);border-top:5px solid var(--acento);box-shadow:var(--sombra-alta)}
+.explorar-cab{display:flex;gap:3rem;align-items:end;justify-content:space-between;margin-bottom:2rem}
+.explorar-cab h2{font:600 clamp(1.8rem,3vw,2.7rem)/1.15 var(--serif);letter-spacing:-.03em;margin:.6rem 0}
+.explorar-cab>p{max-width:320px;color:var(--suave);font-size:.9rem}
+.rutas{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}
+.ruta{display:flex;flex-direction:column;position:relative;padding:1.5rem;border:1px solid var(--linea);border-radius:18px;background:var(--superficie);color:var(--texto);text-decoration:none;min-height:350px;transition:transform .2s,box-shadow .2s;overflow:hidden}
+.ruta::before{content:'';position:absolute;height:5px;top:0;left:0;right:0;background:var(--ruta-acento,var(--acento))}
+.ruta:hover{transform:translateY(-6px);box-shadow:var(--sombra-alta);text-decoration:none}
+.ruta-documental{--ruta-acento:#31799b}.ruta-datos{--ruta-acento:#8270b2}.ruta-comercial{--ruta-acento:#b78338}.ruta-tecnica{--ruta-acento:#498779}
+.ruta-num{font:500 .62rem var(--mono);letter-spacing:.08em;color:var(--suave)}
+.ruta-icono{font-size:2.6rem;line-height:1;margin:1.5rem 0 1rem;color:var(--ruta-acento)}
+.ruta h3{font:600 1.42rem/1.2 var(--serif);margin:0 0 1rem;letter-spacing:-.025em}
+.ruta p{font-size:.81rem;line-height:1.65;color:var(--suave);margin:0 0 1rem}
+.ruta-herr{font-size:.63rem;line-height:1.6;color:var(--suave);margin-top:auto}
+.ruta-ir{display:flex;justify-content:space-between;border-top:1px solid var(--linea);padding-top:1rem;margin-top:1rem;font-size:.7rem}.ruta-ir b{font-size:1.1rem}
+.explorar-filtros{padding:1.4rem;border:1px solid var(--linea);background:var(--superficie);border-radius:16px;margin-bottom:2rem}
+.explorar-filtros[hidden]{display:none}.buscar-puesto{display:block;font-size:.75rem;font-weight:600}.buscar-puesto input{display:block;margin:.5rem 0 1rem;width:100%;border:1px solid var(--linea);background:var(--fondo);color:var(--texto);padding:.85rem 1rem;font:inherit;border-radius:8px}
+.filtros-area{display:flex;gap:.5rem;flex-wrap:wrap}.filtros-area button{font:500 .75rem var(--sans);border:1px solid var(--linea);border-radius:25px;padding:.55rem .95rem;background:var(--fondo);color:var(--texto);cursor:pointer}.filtros-area button[aria-pressed=true]{background:var(--acento);color:var(--marca-txt);border-color:var(--acento)}
+#resultado-puestos{display:inline-block;font-size:.75rem;margin:1rem 1rem 0 0;color:var(--suave)}
+.puesto[hidden]{display:none!important}.puesto.destacado{border-color:var(--acento)}
+@media(max-width:1000px){.rutas{grid-template-columns:repeat(2,minmax(0,1fr))}.ruta{min-height:320px}.ficha{transform:none}}
+@media(max-width:600px){.explorar-cab{display:block}.rutas{grid-template-columns:1fr}.ruta{min-height:0;padding:1.3rem}.ruta-icono{position:absolute;right:1.3rem;top:2rem}.ruta h3{margin-top:1.5rem}.ruta p{max-width:85%}.portada-lema{font-size:2rem}.explorar-filtros{padding:1rem}}
+@media(prefers-reduced-motion:reduce){.ruta{transition:none}.ruta:hover{transform:none}}
+@media print{.explorador,.portada-lema,.explorar-filtros{display:none!important}.puesto[hidden]{display:block!important}.ficha{transform:none;box-shadow:none}}

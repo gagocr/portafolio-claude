@@ -64,3 +64,14 @@ privado (`modelo.json`, que no se sube porque lleva el teléfono y la residencia
 `index.html`, `assets/css/estilo.css` y `assets/js/sitio.js`:
 
     python3 herramientas/construir_sitio.py modelo.json .
+
+
+## Presentación integrada — 23 de octubre de 2026
+
+Este repositorio es el proyecto independiente del portafolio. Integra la navegación por áreas del sitio creado en ChatGPT con la cronología, formación, modo oscuro y contenido de este repositorio.
+
+La portada incorpora una jerarquía visual más clara y cuatro recorridos hacia la experiencia. El buscador de puestos combina palabras y áreas, anuncia cuántos puestos se muestran y permite restablecer la vista. Al imprimir se incluyen todos los puestos. Los contadores de funciones se denominan «funciones», no «logros», porque describen tareas.
+
+La capa de presentación vive en `herramientas/mejorar_presentacion.py`, `herramientas/explorar.css` y `herramientas/explorar.js`. El generador la aplica automáticamente a `index.html`; sus recursos se copian a `assets/`. Para aplicarla una vez sobre una salida existente: `python3 herramientas/mejorar_presentacion.py .`. La vista previa opcional de archivo único del generador conserva el diseño base; la versión completa es `index.html` con `assets/`.
+
+La configuración privada de Sites y los datos internos de búsqueda de empleo no forman parte de este repositorio. El sitio en Sites es una copia desplegada; no hay sincronización automática con GitHub.
